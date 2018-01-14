@@ -12,7 +12,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'Categoria'
         verbose_name_plural = 'Categorias'
-        orderning = ['name']
+        ordering = ['name']
 
 class Product(models.Model):
 
@@ -28,4 +28,4 @@ class Product(models.Model):
     class Meta:
         verbose_name = 'Produto'
         verbose_name_plural = 'Produtos'
-        orderning = ['name']
+        ordering = ['name']
