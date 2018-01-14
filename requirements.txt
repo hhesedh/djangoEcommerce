@@ -1,6 +1,6 @@
-dj-database-url==0.4.1
+dj-database-url
 Django==1.9.5
-freeze==1.0.10
-gunicorn==19.4.5
-psycopg2==2.6.1
-six==1.11.0
+freeze
+gunicorn
+psycopg2
+six
