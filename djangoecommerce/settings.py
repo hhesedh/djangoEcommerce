@@ -24,7 +24,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = ')oio7q7f52ctn-pcd)5y00!s^x%bnr44**p1j-p3rg=%-@s%!t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
@@ -133,3 +133,8 @@ ALLOWED_HOSTS = ['*']
 # Static files (CSS, JavaScript, Images)
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
