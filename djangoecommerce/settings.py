@@ -124,8 +124,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
-#
-
 STATIC_URL = '/static/'
 
 # Update database configuration with $DATABASE_URL.
@@ -139,8 +137,13 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
 
 # Static files (CSS, JavaScript, Images)
-
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+
+# E-mail
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+DEFAULT_FROM_EMAIL = 'admin@djangoecommerce.com'
 
 try:
     from local_settings import *
