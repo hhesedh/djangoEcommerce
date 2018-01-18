@@ -1,12 +1,16 @@
 # coding=utf-8
 
 from django.shortcuts import render
+from django.views.generic import View, TemplateView
 
 from .forms import ContactForm
 
 # Create your views here.
-def index(request):
-    return render(request, 'index.html')
+class IndexView(TemplateView):
+
+    template_name = 'index.html'
+
+index  = IndexView.as_view()
 
 def contact(request):
     success = False
